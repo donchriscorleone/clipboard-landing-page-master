@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+.list {
+    list-style: none;
+}
+
+.list__item {
+    color: $dark-grayish-blue;
+}

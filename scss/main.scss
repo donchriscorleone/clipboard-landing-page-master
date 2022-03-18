@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-bai;
+}
+
+* {
+    // outline: 1px solid #f00 !important;
+    // debugging purposes only
+  }
+
+body {
+    font-size: $font-size;
+}
+
+@import './grid.scss';
+@import './article.scss';
+@import './button.scss';
+@import './block.scss';
+@import './footer.scss';
+@import './list.scss';
+@import './header.scss';
+@import './container.scss';

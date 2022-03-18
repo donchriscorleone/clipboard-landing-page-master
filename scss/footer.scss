@@ -1,0 +1,62 @@
+@import './variables.scss';
+
+.footer {
+    padding: 30px 40px;
+    background-color: rgb(224, 224, 224);
+}
+
+.footer__logo {
+    width: 70px;
+    align-self: center;
+}
+
+.footer.grid--1x3 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 40px;
+}
+
+.footer__links {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 30px;
+
+    .list__item {
+        transition: color .3s;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.attribution {
+    align-self: center;
+    p {
+        color: $dark-grayish-blue;
+        a {
+            color: $dark-grayish-blue;
+            text-decoration: underline;
+            transition: all .3s;
+
+            &:hover {
+                color: #5555;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .footer.grid--1x3 {
+        grid-template-columns: 15% 60% 25%;
+    }
+
+    .footer__links {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 200px);
+        row-gap: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: .9rem;
+    cursor: pointer;
+
+    transition: opacity .5s;
+
+    &:hover {
+        opacity: .8;
+        // box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+.btn--green {
+    box-shadow: 0 0 15px 5px rgba($color: $strong-cyan, $alpha: 0.2);
+    background-color: $strong-cyan;
+}
+
+.btn--violet {
+    box-shadow: 0 0 15px 5px rgba($color: $light-blue, $alpha: 0.2);
+    background-color: $light-blue;
+}
